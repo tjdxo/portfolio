@@ -19,7 +19,7 @@ HTML / CSS / JavaScript. 프레임워크, 외부 라이브러리, 패키지 설�
 3. Skills — 카테고리별 기술 목록
 4. Awards — 2021 → 2025 → 2026 연도 오름차순 수상 내역
 5. Projects — 제목 목차와 프로젝트 상세: UOSLIFE / 시대생 → Flat-on → Energy AI Workflow → On-Device VLM Optimization → Speaker Verification / OpenLab
-6. Footer — 오른쪽 정렬된 이름과 이메일
+6. Footer — 오른쪽 정렬된 `© 2026 김성태` 이메일 링크 (주소는 마우스를 올리면 표시)
 
 400px 초과 스크롤 시 오른쪽 아래에 작은 맨 위로 이동 버튼이 고정 표시됩니다.
 
@@ -87,3 +87,5 @@ GitHub Pages에서 별도 빌드 없이 서비스할 수 있는 구조입니다.
 ## 검증
 
 Chromium에서 320 / 390 / 768 / 1024 / 1440px 너비의 가로 넘침, 프로젝트 5개 표시, 내부 링크를 확인했습니다. 모바일 메뉴 열기·닫기, Escape, 목적지 초점 이동, 동작 줄이기 설정과 JavaScript 비활성화 상태의 내비게이션을 확인했습니다. JavaScript 구문 검사와 `git diff --check`도 수행했습니다.
+
+GitHub Pages 프로젝트 사이트와 같은 `/portfolio/` 하위 경로에서 HTTP로 검증했습니다. CSS·JavaScript·이미지의 상대 경로, 파일명 대소문자, 공백을 `%20`으로 인코딩한 이미지 원본 링크가 정상 동작합니다. `/portfolio/index.html` 및 섹션 해시로 직접 접근하는 경우도 확인했습니다. 실제 GitHub Pages 배포 성공 여부는 별도 확인이 필요합니다.
