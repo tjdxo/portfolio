@@ -44,3 +44,15 @@ document.addEventListener('click', (event) => {
 });
 mobile.addEventListener('change', syncNavigation);
 syncNavigation();
+
+const backToTop = document.querySelector('.back-to-top');
+const updateBackToTop = () => {
+  const visible = window.scrollY > 400;
+  if (!visible && document.activeElement === backToTop) {
+    document.querySelector('#main').focus({ preventScroll: true });
+  }
+  backToTop.hidden = !visible;
+};
+window.addEventListener('scroll', updateBackToTop, { passive: true });
+window.addEventListener('pageshow', updateBackToTop);
+updateBackToTop();
