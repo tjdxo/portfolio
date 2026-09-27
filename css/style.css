@@ -109,7 +109,11 @@ h2 { font-size: 28px; font-weight: 650; }
 
 .meta { color: var(--muted); font-size: 15px; }
 .project-affiliation { margin-top: 12px; }
-.image-placeholder { display: grid; place-items: center; min-height: 150px; border: 1px dashed var(--border); color: var(--muted); background: #f8fafc; margin-top: 28px; font-size: 14px; }
+.project-figure { margin: 28px 0 0; }
+.project-figure a { display: block; }
+.project-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); }
+.project-figure figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.project-figure figcaption strong { display: block; margin-bottom: 4px; color: var(--text); font-weight: 600; }
 
 .hero-email { margin-top: 14px; font-size: 16px; }
 .project-index { margin-top: 24px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
