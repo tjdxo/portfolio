@@ -118,8 +118,7 @@ h2 { font-size: 36px; font-weight: 750; }
 .project-figure { margin: 28px 0 0; }
 .project-figure a { display: block; }
 .project-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); }
-.project-figure figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.7; }
-.project-figure figcaption strong { display: block; margin-bottom: 4px; color: var(--text); font-weight: 600; }
+.project-figure figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.7; text-align: center; }
 
 .hero-email { margin-top: 14px; font-size: 16px; color: var(--text); }
 .project-index { margin-top: 24px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
