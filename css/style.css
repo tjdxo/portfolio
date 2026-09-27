@@ -1,12 +1,10 @@
 :root {
   color-scheme: light;
   --background: #ffffff;
-  --text: #202734;
-  --muted: #525d6d;
+  --text: #242424;
+  --muted: #595959;
   --accent: #2563eb;
-  --accent-soft: #f3f7ff;
-  --accent-border: #cfddfa;
-  --border: #e0e5ed;
+  --border: #e2e2e2;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", sans-serif;
   color: var(--text);
   background: var(--background);
@@ -16,11 +14,11 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; }
-::selection { background: #dbeafe; }
+::selection { background: #e8e8e8; }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 5px; }
 a:hover { text-decoration: underline; }
 button { font: inherit; }
-a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-offset: 5px; }
 [tabindex="-1"]:focus { outline: none; }
 h1, h2, h3, p, dl, dd { margin: 0; }
 h1, h2, h3 { line-height: 1.3; letter-spacing: -0.035em; }
@@ -28,12 +26,12 @@ p, dd, h3 { word-break: keep-all; overflow-wrap: anywhere; }
 .container { width: min(1120px, calc(100% - 96px)); margin-inline: auto; }
 .skip-link { position: fixed; top: 12px; left: 12px; z-index: 20; padding: 12px 20px; background: var(--text); color: white; transform: translateY(-180%); }
 .skip-link:focus { transform: translateY(0); color: white; }
-.header { position: sticky; top: 0; z-index: 10; background: var(--accent-soft); border-top: 3px solid var(--accent); border-bottom: 1px solid var(--accent-border); }
+.header { position: sticky; top: 0; z-index: 10; background: var(--background); border-bottom: 1px solid var(--border); }
 .nav { display: flex; align-items: center; justify-content: flex-end; min-height: 72px; gap: 24px; }
 .nav-list { list-style: none; display: flex; gap: 28px; padding: 0; margin: 0; }
-.nav-list a { display: block; padding-block: 12px; text-decoration: none; font-size: 14px; color: var(--accent); font-weight: 600; }
+.nav-list a { display: block; padding-block: 12px; text-decoration: none; font-size: 14px; color: var(--text); font-weight: 600; }
 .nav-list a:hover { text-decoration: underline; }
-.nav-toggle { display: none; border: 0; background: transparent; color: var(--accent); padding: 11px; width: 44px; height: 44px; cursor: pointer; }
+.nav-toggle { display: none; border: 0; background: transparent; color: var(--text); padding: 11px; width: 44px; height: 44px; cursor: pointer; }
 .menu-icon { display: flex; flex-direction: column; justify-content: space-between; width: 22px; height: 18px; position: relative; }
 .menu-icon span { display: block; width: 22px; height: 2px; border-radius: 1px; background: currentColor; }
 .nav-toggle[aria-expanded="true"] .menu-icon span:first-child { position: absolute; top: 8px; transform: rotate(45deg); }
@@ -49,19 +47,19 @@ h1 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 12px; letter-spacing: 
 .text-link span { margin-left: 8px; }
 .section { border-top: 1px solid var(--border); padding-block: 64px; }
 section[id], article[id], main[id] { scroll-margin-top: 110px; }
-h2 { font-size: 28px; font-weight: 650; }
+h2 { font-size: 36px; font-weight: 750; }
 .section > h2::before { content: ""; display: block; width: 32px; height: 3px; background: var(--accent); margin-bottom: 14px; }
 .project { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr); gap: 72px; padding-block: 48px; }
 .project + .project { border-top: 1px solid var(--border); }
 .project:last-child { padding-bottom: 0; }
-.project h3 { font-size: 26px; }
-.title-secondary { font-size: 20px; font-weight: 450; }
+.project h3 { font-size: 23px; font-weight: 600; }
+.title-secondary { font-size: 18px; font-weight: 450; }
 .project-summary { margin-block: 16px 22px; color: var(--muted); }
 .project-details dt { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
 .project-details dd { color: var(--muted); font-size: 16px; }
 .project-details dd + dt { margin-top: 22px; }
 .project-details strong { color: var(--text); font-weight: 600; }
-.keywords { color: var(--accent); font-size: 14px; line-height: 1.9; margin-top: 26px; }
+.keywords { color: var(--muted); font-size: 14px; line-height: 1.9; margin-top: 26px; }
 .resume-section { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr); gap: 72px; }
 .resume-content { min-width: 0; }
 .resume-content h3 { font-size: 18px; font-weight: 600; }
@@ -97,10 +95,10 @@ h2 { font-size: 28px; font-weight: 650; }
   .hero-description { font-size: 16px; }
   .affiliation span { display: block; margin-left: 0; }
   .section { padding-block: 40px; }
-  h2 { font-size: 25px; }
+  h2 { font-size: 30px; }
   .project, .resume-section { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .project { padding-block: 36px; }
-  .project h3 { font-size: 24px; }
+  .project h3 { font-size: 21px; }
   .project-summary { margin-block: 12px; }
   .project-summary br { display: none; }
   .skill-list > div { grid-template-columns: 115px minmax(0, 1fr); gap: 16px; }
@@ -123,10 +121,10 @@ h2 { font-size: 28px; font-weight: 650; }
 .project-figure figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .project-figure figcaption strong { display: block; margin-bottom: 4px; color: var(--text); font-weight: 600; }
 
-.hero-email { margin-top: 14px; font-size: 16px; color: var(--accent); }
+.hero-email { margin-top: 14px; font-size: 16px; color: var(--text); }
 .project-index { margin-top: 24px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
 .project-index ol { display: flex; flex-wrap: wrap; gap: 8px 32px; list-style: none; margin: 0; padding: 0; }
-.project-index a { display: inline-block; padding-block: 8px; text-decoration: none; color: var(--accent); }
+.project-index a { display: inline-block; padding-block: 8px; text-decoration: none; color: var(--text); }
 .project-index a:hover { text-decoration: underline; }
 @media (max-width: 767px) {
   .project-index ol { display: block; }
