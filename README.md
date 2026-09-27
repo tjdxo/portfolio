@@ -5,8 +5,8 @@
 - 저장소: [tjdxo/portfolio](https://github.com/tjdxo/portfolio)
 - GitHub: [@tjdxo](https://github.com/tjdxo)
 - 이메일: rlatjdxo951@gmail.com
-- 배포 URL: 배포 확인 후 기입
-- GitHub Pages 사용 여부: 미확인. 저장소에 배포 workflow나 별도 도메인 설정은 없습니다. GitHub의 Pages 설정은 별도 확인이 필요합니다.
+- 배포 URL: https://tjdxo.github.io/portfolio/
+- GitHub Pages 사용 중. 배포 사이트의 HTML·CSS·JavaScript 응답과 브라우저 동작을 확인했습니다.
 
 ## 사용 기술
 
@@ -81,6 +81,14 @@ portfolio/
 - 특허 출원과 OpenLab 진행 상황은 변경될 때 갱신합니다.
 
 ## 배포
+
+CSS 또는 JavaScript를 변경한 뒤 커밋하기 전에 아래 명령을 실행합니다. 파일 내용의 해시를 `index.html`의 CSS·JS 주소에 붙여, 배포 후 이전 캐시와 새 HTML이 섞이지 않게 합니다. 빌드나 패키지 설치는 필요하지 않습니다.
+
+```sh
+node scripts/update-asset-versions.cjs
+```
+
+GitHub Pages 응답은 현재 `Cache-Control: max-age=600`을 사용합니다. HTML 자체가 캐시된 경우 새 배포가 잠시 늦게 보일 수 있지만, 새 HTML을 받은 이후에는 해당 버전의 CSS·JS를 요청합니다.
 
 GitHub Pages에서 별도 빌드 없이 서비스할 수 있는 구조입니다. Pages를 사용할 경우 저장소 Settings → Pages에서 배포 소스를 `main` 브랜치의 `/(root)`로 지정하고, 배포 완료 후 표시되는 실제 URL을 위의 배포 URL 항목에 기입합니다. 이 저장소 수정만으로 Pages 활성화나 배포 성공을 의미하지는 않습니다.
 
