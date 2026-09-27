@@ -15,16 +15,16 @@ HTML / CSS / JavaScript. 프레임워크, 외부 라이브러리, 패키지 설�
 ## 페이지 구성
 
 1. Header / Navigation
-2. Hero — 프로필 사진, 소개, 관심 분야와 Projects 링크
-3. Projects — UOSLIFE / 시대생 → Flat-on → Energy AI Workflow → On-Device VLM Optimization → Speaker Verification / OpenLab
-4. Awards & Recognition — 연도별 수상 내역
+2. Hero — 왼쪽 프로필 사진, 이름·소속·소개와 이메일
+3. Projects — 제목 목차와 프로젝트 상세: UOSLIFE / 시대생 → Flat-on → Energy AI Workflow → On-Device VLM Optimization → Speaker Verification / OpenLab
+4. Awards — 2021 → 2025 → 2026 연도 오름차순 수상 내역
 5. Skills — 카테고리별 기술 목록
 6. Education — 서울시립대학교 전자전기컴퓨터공학부
 7. Footer — 이메일과 맨 위로 이동 링크
 
-About은 Hero에 통합했습니다. 별도의 Contact 영역·메뉴·폼은 두지 않으며, 이메일은 푸터의 `mailto:` 링크로만 제공합니다. 링크는 방문자의 이메일 앱을 열며 서버에서 메시지를 전송하지 않습니다.
+About은 Hero에 통합했습니다. 별도의 Contact 영역·메뉴·폼은 두지 않으며, 이메일은 소개와 푸터의 `mailto:` 링크로 제공합니다. 링크는 방문자의 이메일 앱을 열며 서버에서 메시지를 전송하지 않습니다.
 
-프로젝트는 `index.html`에서 직접 관리합니다. 프로젝트 성격에 맞춰 참여 내용과 결과, 또는 실험 과정과 관찰을 정리합니다. 별도 Experience는 프로젝트와 중복되어 두지 않습니다. 진행 중인 Speaker Verification은 완료 성과로 표현하지 않습니다.
+프로젝트는 `index.html`에서 직접 관리합니다. 배경·참여 내용·결과를 중심으로 분량과 소제목을 맞추며, 진행 중인 SV는 결과 대신 진행 상황을 표시합니다. 프로젝트 제목 목차에서 각 상세 항목으로 이동할 수 있습니다. 별도 Experience는 프로젝트와 중복되어 두지 않습니다. 진행 중인 Speaker Verification은 완료 성과로 표현하지 않습니다.
 
 VLM은 2026.03–2026.06 전자전기컴퓨터공학종합설계 / SW 산학협력의 Academic Project입니다. 입력 해상도와 CLIP 기반 영역 선택을 실험하고 정확도·token·latency·메모리의 trade-off를 분석한 경험으로 소개합니다. VStar·HRBench 수치는 비슷한 token budget의 720px 입력과 비교한 실험 결과이며, TreeBench의 제한적인 개선과 crop 증가에 따른 비용도 함께 기록합니다. SV는 현재 진행 중인 학습·탐구로 마지막에 배치합니다.
 
@@ -35,8 +35,8 @@ VLM은 2026.03–2026.06 전자전기컴퓨터공학종합설계 / SW 산학협�
 - 카드·배지·그림자·등장 애니메이션 없이 콘텐츠 위계와 여백으로 구분
 - 모바일 접이식 메뉴, Escape 닫기와 키보드 초점 관리
 - 본문 바로가기, 시맨틱 제목, 명확한 포커스 표시
-- 마우스 hover 시 사진·버튼은 3px 위로, 프로젝트 제목은 3px 옆으로 이동
-- `prefers-reduced-motion`에 따라 hover 이동과 부드러운 스크롤 해제
+- hover 시 색상 변경이나 이동 효과 없이 링크 밑줄만 표시
+- `prefers-reduced-motion`에 따라 부드러운 스크롤 해제
 - JavaScript 없이도 콘텐츠와 내비게이션 이용 가능
 - 인쇄 시 내비게이션과 불필요한 버튼 숨김
 
