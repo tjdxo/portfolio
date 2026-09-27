@@ -16,13 +16,12 @@ HTML / CSS / JavaScript. 프레임워크, 외부 라이브러리, 패키지 설�
 
 1. Header / Navigation
 2. Hero — 왼쪽 프로필 사진, 이름·소속·소개와 이메일
-3. Projects — 제목 목차와 프로젝트 상세: UOSLIFE / 시대생 → Flat-on → Energy AI Workflow → On-Device VLM Optimization → Speaker Verification / OpenLab
+3. Skills — 카테고리별 기술 목록
 4. Awards — 2021 → 2025 → 2026 연도 오름차순 수상 내역
-5. Skills — 카테고리별 기술 목록
-6. Education — 서울시립대학교 전자전기컴퓨터공학부
-7. Footer — 이메일과 맨 위로 이동 링크
+5. Projects — 제목 목차와 프로젝트 상세: UOSLIFE / 시대생 → Flat-on → Energy AI Workflow → On-Device VLM Optimization → Speaker Verification / OpenLab
+6. Footer — 이메일과 맨 위로 이동 링크
 
-About은 Hero에 통합했습니다. 별도의 Contact 영역·메뉴·폼은 두지 않으며, 이메일은 소개와 푸터의 `mailto:` 링크로 제공합니다. 링크는 방문자의 이메일 앱을 열며 서버에서 메시지를 전송하지 않습니다.
+About은 Hero에 통합했습니다. 학교와 전공은 소개에 표시하며 별도 Education은 두지 않습니다. 상단 메뉴도 Skills → Awards → Projects 순서입니다. 별도의 Contact 영역·메뉴·폼은 두지 않으며, 이메일은 소개와 푸터의 `mailto:` 링크로 제공합니다. 링크는 방문자의 이메일 앱을 열며 서버에서 메시지를 전송하지 않습니다.
 
 프로젝트는 `index.html`에서 직접 관리합니다. 배경·참여 내용·결과를 중심으로 분량과 소제목을 맞추며, 진행 중인 SV는 결과 대신 진행 상황을 표시합니다. 프로젝트 제목 목차에서 각 상세 항목으로 이동할 수 있습니다. 별도 Experience는 프로젝트와 중복되어 두지 않습니다. 진행 중인 Speaker Verification은 완료 성과로 표현하지 않습니다.
 
