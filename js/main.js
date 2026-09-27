@@ -5,7 +5,7 @@ const mobile = window.matchMedia('(max-width: 767px)');
 
 const setOpen = (open) => {
   toggle.setAttribute('aria-expanded', String(open));
-  toggle.textContent = open ? '메뉴 닫기' : '메뉴 열기';
+  toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
   menu.hidden = mobile.matches && !open;
 };
 
