@@ -6,8 +6,8 @@
   <meta name="description" content="서울시립대학교 전자전기컴퓨터공학부 김성태의 개인 포트폴리오. 현장 문제 정의, 서비스 개발, AI Workflow, VLM 최적화 실험과 화자 인증 학습 경험을 소개합니다." />
   <meta name="theme-color" content="#ffffff" />
   <title>김성태 | AI & Software Portfolio</title>
-  <link rel="stylesheet" href="./css/style.css?v=3618d0819b51" />
-  <script src="./js/main.js?v=97f719f39705" defer></script>
+  <link rel="stylesheet" href="./css/style.css?v=ce94885f3b0a" />
+  <script src="./js/main.js?v=59bcfad6547d" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">본문으로 바로가기</a>
@@ -48,9 +48,9 @@
     <section class="section resume-section" id="awards" aria-labelledby="awards-title" tabindex="-1">
       <h2 id="awards-title">Awards</h2>
       <ol class="award-list resume-content">
-        <li><time datetime="2021">2021</time><div><h3>LINC+ 4차 산업혁명 혁신선도대학 육성사업 성과발표회</h3><p>특별상 · <a href="#uoslife">UOSLIFE / 시대생</a></p></div></li>
-        <li><time datetime="2025">2025</time><div><h3>직무혁신 성과 팀 공모전</h3><p>최우수상 · <a href="#flat-on">Flat-on</a></p></div></li>
-        <li><time datetime="2026">2026</time><div><h3>고려대학교 Energy AI Workflow Hackathon</h3><p>금상 · <a href="#energy-workflow">Energy AI Workflow</a></p></div></li>
+        <li><time datetime="2021">2021</time><div><h3>LINC+ 4차 산업혁명 혁신선도대학 육성사업 성과발표회</h3><p><a class="award-preview" href="./images/award-uoslife-special.jpg" data-title="UOSLIFE / 시대생 · 특별상" aria-label="시대생 특별상 상장 크게 보기" aria-haspopup="dialog" aria-controls="award-dialog">특별상</a> · UOSLIFE / 시대생</p></div></li>
+        <li><time datetime="2025">2025</time><div><h3>직무혁신 성과 팀 공모전</h3><p><a class="award-preview" href="./images/직무혁신성과팀공모전_최우수상.jpg" data-title="Flat-on · 최우수상" aria-label="Flat-on 최우수상 상장 크게 보기" aria-haspopup="dialog" aria-controls="award-dialog">최우수상</a> · <a class="award-preview" href="./images/award-flat-on-leader.jpg" data-title="Flat-on · 리더상" aria-label="Flat-on 리더상 상장 크게 보기" aria-haspopup="dialog" aria-controls="award-dialog">리더상</a> · Flat-on</p></div></li>
+        <li><time datetime="2026">2026</time><div><h3>고려대학교 Energy AI Workflow Hackathon</h3><p><a class="award-preview" href="./images/에너지AI워크플로우교육&amp;해커톤_금상.jpg" data-title="Energy AI Workflow · 금상" aria-label="Energy AI Workflow 금상 상장 크게 보기" aria-haspopup="dialog" aria-controls="award-dialog">금상</a> · Energy AI Workflow</p></div></li>
       </ol>
     </section>
 
@@ -99,7 +99,7 @@
             <dt>참여 내용</dt>
             <dd>기업 컨택과 인터뷰, 요구사항 정리, 시스템 설계와 프로토타입 검증을 맡았습니다. 거리 센서로 네 모서리의 단차를 측정하고 모터로 높이를 보정한 뒤 재측정하는 구조를 설계·프로토타이핑했으며, 팀 일정과 역할을 조율했습니다.</dd>
             <dt>결과</dt>
-            <dd>직무혁신 성과 팀 공모전 <strong>최우수상</strong> · 특허 출원 진행</dd>
+            <dd>직무혁신 성과 팀 공모전 <strong>최우수상 · 리더상</strong> · 특허 출원 진행</dd>
           </dl>
           <p class="keywords" aria-label="핵심 키워드">Problem Definition / Hardware / Software / Prototyping / Collaboration</p>
         </div>
@@ -195,6 +195,17 @@
     </section>
 
   </main>
+  <dialog class="award-dialog" id="award-dialog" aria-labelledby="award-dialog-title">
+    <div class="award-dialog-toolbar">
+      <h2 id="award-dialog-title">상장 보기</h2>
+      <button class="award-zoom" type="button" aria-pressed="false" aria-controls="award-image-area">확대</button>
+      <form method="dialog"><button class="award-close" type="submit" autofocus aria-label="상장 보기 닫기">닫기 <span aria-hidden="true">×</span></button></form>
+    </div>
+    <div class="award-image-area" id="award-image-area">
+      <img class="award-image" alt="" />
+      <p class="award-image-error" role="status" hidden>상장 이미지를 불러오지 못했습니다. 창을 닫고 다시 시도해 주세요.</p>
+    </div>
+  </dialog>
   <footer class="footer container"><a class="footer-credit" href="mailto:rlatjdxo951@gmail.com" title="rlatjdxo951@gmail.com" aria-label="김성태에게 이메일 보내기: rlatjdxo951@gmail.com">© 2026 김성태</a></footer>
   <a class="back-to-top" href="#top" aria-label="맨 위로 이동" hidden><span aria-hidden="true">↑</span></a>
 </body>

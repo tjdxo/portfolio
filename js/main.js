@@ -56,3 +56,61 @@ const updateBackToTop = () => {
 window.addEventListener('scroll', updateBackToTop, { passive: true });
 window.addEventListener('pageshow', updateBackToTop);
 updateBackToTop();
+
+const awardDialog = document.querySelector('#award-dialog');
+const awardTitle = document.querySelector('#award-dialog-title');
+const awardImage = awardDialog.querySelector('.award-image');
+const awardImageArea = awardDialog.querySelector('.award-image-area');
+const awardImageError = awardDialog.querySelector('.award-image-error');
+const awardZoom = awardDialog.querySelector('.award-zoom');
+let awardTrigger;
+
+const resetAwardZoom = () => {
+  awardImageArea.classList.remove('is-zoomed');
+  awardZoom.setAttribute('aria-pressed', 'false');
+  awardZoom.textContent = '확대';
+  awardImageArea.scrollTo(0, 0);
+};
+
+document.querySelectorAll('.award-preview').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || !awardDialog.showModal) return;
+    event.preventDefault();
+    awardTrigger = link;
+    resetAwardZoom();
+    awardTitle.textContent = link.dataset.title;
+    awardImage.alt = `${link.dataset.title} 상장`;
+    awardImage.hidden = false;
+    awardImageError.hidden = true;
+    awardImage.src = link.href;
+    awardDialog.showModal();
+    document.documentElement.classList.add('award-viewer-open');
+  });
+});
+
+awardImage.addEventListener('error', () => {
+  awardImage.hidden = true;
+  awardImageError.hidden = false;
+});
+
+awardZoom.addEventListener('click', () => {
+  const zoomed = awardImageArea.classList.toggle('is-zoomed');
+  awardZoom.setAttribute('aria-pressed', String(zoomed));
+  awardZoom.textContent = zoomed ? '전체 보기' : '확대';
+  awardImageArea.scrollTo(0, 0);
+});
+
+// Only a click outside the dialog's bounds dismisses the backdrop.
+awardDialog.addEventListener('click', (event) => {
+  if (event.target !== awardDialog) return;
+  const bounds = awardDialog.getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) {
+    awardDialog.close();
+  }
+});
+
+awardDialog.addEventListener('close', () => {
+  document.documentElement.classList.remove('award-viewer-open');
+  resetAwardZoom();
+  awardTrigger?.focus({ preventScroll: true });
+});

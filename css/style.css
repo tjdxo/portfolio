@@ -72,6 +72,21 @@ h2 { font-size: 36px; font-weight: 750; }
 .award-list time { color: var(--muted); font-size: 16px; font-variant-numeric: tabular-nums; }
 .award-list h3 { font-size: 16px; line-height: 1.65; }
 .award-list p { font-size: 16px; margin-top: 4px; }
+.award-preview { display: inline-block; padding-block: 4px; }
+.award-viewer-open { overflow: hidden; }
+.award-dialog { width: min(960px, calc(100% - 24px)); max-width: none; max-height: 94dvh; padding: 0; border: 1px solid var(--border); border-radius: 8px; color: var(--text); background: var(--background); overflow: hidden; }
+.award-dialog::backdrop { background: rgb(0 0 0 / 65%); }
+.award-dialog[open] { display: flex; flex-direction: column; }
+.award-dialog-toolbar { display: flex; flex-shrink: 0; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+.award-dialog-toolbar h2 { flex: 1; min-width: 0; font-size: 16px; line-height: 1.5; word-break: keep-all; overflow-wrap: anywhere; }
+.award-dialog-toolbar form { margin: 0; }
+.award-dialog-toolbar button { min-height: 44px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 4px; color: var(--text); background: var(--background); white-space: nowrap; cursor: pointer; }
+.award-close span { margin-left: 4px; }
+.award-image-area { min-height: 0; height: min(78dvh, 1000px); padding: 12px; overflow: auto; overscroll-behavior: contain; background: #f5f5f5; }
+.award-image { display: block; width: 100%; height: 100%; object-fit: contain; }
+.award-image[hidden] { display: none; }
+.award-image-area.is-zoomed .award-image { width: max(100%, 1000px); max-width: none; height: auto; }
+.award-image-error { padding: 24px; color: var(--muted); }
 .skill-list > div { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 20px; }
 .skill-list > div + div { margin-top: 18px; }
 .skill-list dt { font-size: 14px; font-weight: 600; }
@@ -89,6 +104,8 @@ h2 { font-size: 36px; font-weight: 750; }
   .skill-list > div { grid-template-columns: 1fr; gap: 4px; }
 }
 @media (max-width: 767px) {
+  .award-dialog-toolbar { flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+  .award-dialog-toolbar h2 { flex: 1 0 100%; }
   .container { width: calc(100% - 40px); }
   .nav { min-height: 72px; flex-wrap: wrap; gap: 0; padding-block: 12px; }
   .nav-list { width: 100%; flex-wrap: wrap; gap: 0 20px; padding-top: 12px; }
@@ -111,7 +128,7 @@ h2 { font-size: 36px; font-weight: 750; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {
-  .header, .skip-link, .project-index, .footer, .back-to-top { display: none; }
+  .header, .skip-link, .project-index, .footer, .back-to-top, .award-dialog, .award-dialog[open] { display: none; }
   :root { background: white; color: black; }
   .container { width: 100%; }
   .hero, .section { padding-block: 24px; }
