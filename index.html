@@ -6,7 +6,7 @@
   <meta name="description" content="서울시립대학교 전자전기컴퓨터공학부 김성태의 개인 포트폴리오. 현장 문제 정의, 서비스 개발, AI Workflow, VLM 최적화 실험과 화자 인증 학습 경험을 소개합니다." />
   <meta name="theme-color" content="#ffffff" />
   <title>김성태 | AI & Software Portfolio</title>
-  <link rel="stylesheet" href="./css/style.css?v=7684a76fcbc2" />
+  <link rel="stylesheet" href="./css/style.css?v=3618d0819b51" />
   <script src="./js/main.js?v=97f719f39705" defer></script>
 </head>
 <body id="top">
@@ -61,6 +61,7 @@
           <li><a href="#uoslife">UOSLIFE / 시대생</a></li>
           <li><a href="#flat-on">Flat-on</a></li>
           <li><a href="#energy-workflow">Energy AI Workflow</a></li>
+          <li><a href="#building-coach">세상에 나쁜 건물은 없다</a></li>
           <li><a href="#vlm-optimization">On-Device VLM Optimization</a></li>
           <li><a href="#speaker-verification">Speaker Verification</a></li>
         </ol>
@@ -71,6 +72,7 @@
           <p class="project-summary">서울시립대학교 학생을 위한<br />커뮤니티 서비스</p>
           <p class="meta">Frontend Developer</p>
           <p class="meta"><time datetime="2021-09">2021.09</time> – <time datetime="2022-07">2022.07</time></p>
+          <a class="text-link" href="https://uoslife.team/" target="_blank" rel="noopener noreferrer" aria-label="시대생 팀 공식 홈페이지 (새 탭)">팀 공식 홈페이지 <span aria-hidden="true">↗</span></a>
         </header>
         <div class="project-body">
           <dl class="project-details">
@@ -107,6 +109,7 @@
           <p class="project-summary">ESS 운영 의사결정을<br />지원하는 AI Workflow 서비스</p>
           <p class="meta">Team Lead · Workflow 기획 및 구현</p>
           <p class="meta"><time datetime="2026-01">2026.01</time></p>
+          <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/tO804Wzx4M0" title="Energy AI Workflow 서비스 데모 및 제출 영상" width="560" height="315" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </header>
         <div class="project-body">
           <dl class="project-details">
@@ -118,6 +121,29 @@
             <dd>고려대학교 Energy AI Workflow Hackathon <strong>금상</strong></dd>
           </dl>
           <p class="keywords" aria-label="핵심 키워드">AI Workflow / Automation / Energy / Service Planning</p>
+        </div>
+      </article>
+      <article class="project" id="building-coach" aria-labelledby="building-coach-title" tabindex="-1">
+        <header class="project-heading">
+          <h3 id="building-coach-title">세상에 나쁜 건물은 없다</h3>
+          <p class="project-summary">서울·인천 공공데이터 기반<br />건물 에너지 진단 서비스</p>
+          <p class="meta">팀 NBLB (No Building Left Behind)</p>
+          <p class="meta">Frontend / Backend 개발 · 서비스 통합</p>
+          <p class="meta"><time datetime="2026-03">2026.03</time> – <time datetime="2026-06">2026.06</time></p>
+          <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/16ldRgGpu6Y" title="세상에 나쁜 건물은 없다 기능 시연 영상" width="560" height="315" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <a class="text-link" href="https://not-bad-building-coach.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="세상에 나쁜 건물은 없다 프로토타입 보기 (새 탭)">프로토타입 보기 <span aria-hidden="true">↗</span></a>
+          <small class="prototype-note">(현재 일부 기능이 정상 동작하지 않을 수 있습니다.)</small>
+        </header>
+        <div class="project-body">
+          <dl class="project-details">
+            <dt>서비스 소개</dt>
+            <dd>서울·인천 공공데이터를 활용해 건물의 에너지 사용을 진단하고 유사 건물과 비교하는 서비스를 개발했습니다.</dd>
+            <dt>참여 내용</dt>
+            <dd>Next.js·React 프론트엔드와 Python 백엔드를 개발하고 Supabase를 연동했습니다. 지역·용도·면적·층수를 기준으로 유사 건물을 선별하는 로직을 구현하고, 팀원들이 수집·정리한 데이터와 개발한 예측 모델을 서비스 흐름에 통합했습니다.</dd>
+            <dt>결과</dt>
+            <dd>건물 에너지 진단과 유사 건물 비교를 이용할 수 있는 웹 프로토타입을 구현했습니다.</dd>
+          </dl>
+          <p class="keywords" aria-label="사용 기술과 핵심 키워드">Next.js / React / Python / Supabase / Public Data / Model Integration</p>
         </div>
       </article>
       <article class="project" id="vlm-optimization" aria-labelledby="vlm-title" tabindex="-1">

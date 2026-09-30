@@ -45,6 +45,8 @@ h1 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 12px; letter-spacing: 
 .affiliation span { color: var(--muted); margin-left: 12px; }
 .text-link { display: inline-block; padding-block: 10px; font-size: 14px; }
 .text-link span { margin-left: 8px; }
+.prototype-note { display: block; color: var(--muted); font-size: 12px; }
+.project-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; margin-top: 22px; border: 0; }
 .section { border-top: 1px solid var(--border); padding-block: 64px; }
 section[id], article[id], main[id] { scroll-margin-top: 110px; }
 h2 { font-size: 36px; font-weight: 750; }

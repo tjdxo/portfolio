@@ -18,7 +18,7 @@ HTML / CSS / JavaScript. 프레임워크, 외부 라이브러리, 패키지 설�
 2. Hero — 왼쪽 프로필 사진, 이름·소속·소개와 이메일
 3. Skills — 카테고리별 기술 목록
 4. Awards — 2021 → 2025 → 2026 연도 오름차순 수상 내역
-5. Projects — 제목 목차와 프로젝트 상세: UOSLIFE / 시대생 → Flat-on → Energy AI Workflow → On-Device VLM Optimization → Speaker Verification / OpenLab
+5. Projects — 제목 목차와 프로젝트 상세: UOSLIFE / 시대생 → Flat-on → Energy AI Workflow → 세상에 나쁜 건물은 없다 → On-Device VLM Optimization → Speaker Verification / OpenLab
 6. Footer — 오른쪽 정렬된 `© 2026 김성태` 이메일 링크 (주소는 마우스를 올리면 표시)
 
 400px 초과 스크롤 시 오른쪽 아래에 작은 맨 위로 이동 버튼이 고정 표시됩니다.
@@ -76,7 +76,7 @@ portfolio/
 - LinkedIn: 실제 URL이 있을 때만 푸터에 추가합니다.
 - 프로젝트 이미지: VLM에는 `images/clip_guided grid.png`와 방식 설명 캡션을 표시합니다. 이미지를 누르면 새 탭에서 원본을 확인할 수 있습니다. 다른 프로젝트도 실제 장치·서비스·Workflow 화면을 준비한 후 해당 article에 설명과 함께 추가합니다. 원본 비율, 이미지 크기, 의미 있는 대체 텍스트를 지정합니다.
 - 프로젝트 URL: 공개 가능한 저장소, 서비스 또는 발표 자료의 실제 링크를 각 프로젝트에 추가합니다.
-- 프로젝트 기간: 시대생 2021.09 – 2022.07, Flat-on 2025.09 – 2025.11, Energy AI 2026.01, VLM 2026.03 – 2026.06, SV 2026.09 – 현재.
+- 프로젝트 기간(시작일 오름차순): 시대생 2021.09 – 2022.07, Flat-on 2025.09 – 2025.11, Energy AI 2026.01, 세상에 나쁜 건물은 없다 2026.03 – 2026.06, VLM 2026.03 – 2026.06, SV 2026.09 – 현재.
 - 이력서: 실제 PDF를 준비한 뒤 Hero에 링크를 추가할 수 있습니다.
 - 특허 출원과 OpenLab 진행 상황은 변경될 때 갱신합니다.
 
